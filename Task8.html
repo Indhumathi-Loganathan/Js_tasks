@@ -1,0 +1,213 @@
+<html>
+
+<head>
+    <title>Task8</title>
+    <style>
+        body {
+            background-image: url(/Javascript_files/Suji_mam/JSTasks/menu_bg.jpeg);
+            color: rgb(102, 182, 53);
+            text-align: center;
+        }
+        table{
+            text-align: center;
+            font-size: larger;
+            margin-left: 38%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        FRESH COFFEE SHOP
+    </h1>
+    <h2>
+        Cofee Menu
+    </h2>
+    <table>
+        <tr>
+        <td>C.No</td>
+        <td>Name</td>
+        <td>Price(Rs)</td>
+        </tr>
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                Coffee
+            </td>
+            <td>
+                30
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2
+            </td>
+            <td>
+                Filter Coffee
+            </td>
+            <td>
+                40
+            </td>
+        </tr>
+        <tr>
+            <td>
+                3
+            </td>
+            <td>
+                Chocolate Coffee
+            </td>
+            <td>
+                80
+            </td>
+        </tr>
+        <tr>
+            <td>
+                4
+            </td>
+            <td>
+                Coffee with Butter Cookies
+            </td>
+            <td>
+                50
+            </td>
+        </tr>
+        <tr>
+            <td>
+                5
+            </td>
+            <td>
+                Hot Chocolate
+            </td>
+            <td>
+                100
+            </td>
+        </tr>
+        <tr>
+            <td>
+                6
+            </td>
+            <td>
+                Tea
+            </td>
+            <td>
+                20
+            </td>
+        </tr>
+        <tr>
+            <td>
+                7
+            </td>
+            <td>
+                Tea with Butter Cookies
+            </td>
+            <td>
+                40
+            </td>
+        </tr>
+        <tr>
+            <td>
+                8
+            </td>
+            <td>
+                Green Tea
+            </td>
+            <td>
+                40
+            </td>
+        </tr>
+
+    </table>
+    <script>
+        let selection=0;
+        let quantity=0;
+        let price=0;
+
+        function getselection()
+        {
+           //selection=prompt("Hello Sir/Madam,<br>What would you like to have?<br>Enter C.No of the Item",0);
+          selection=3; 
+           return selection;
+        }
+        function getquantity()
+        {
+            //quantity=prompt("Hello Sir/Madam,&nbsp &nbspEnter the quantity of the Item",0);
+            quantity=6;
+            return quantity;
+        }
+        function getprice(select)
+        {
+            switch(select){
+                case 1:
+                    {
+                        document.writeln("You have selected  Coffee!!<br>");
+                        price=30;
+                        return price;
+                        break;
+                    }
+                case 2:
+                    {
+                        document.writeln("You have selected  Filter Coffee!!<br>")
+                        price=40;
+                        return price;
+                        break;
+                    }
+                case 3:
+                    {
+                        document.writeln("You have selected  Chocolate Coffee!!<br>")
+                        price=80;
+                        return price;
+                        break;
+                    }
+                case 4:
+                    {
+                        document.writeln("You have selected  Coffee with Butter Cookies!!<br>")
+                        price=50;
+                        return price;
+                        break;
+                    }
+                case 5:
+                    {
+                        document.writeln("You have selected  Hot Chocolate!!<br>")
+                        price=100;
+                        return price;
+                        break;
+                    }
+                case 6:
+                    {
+                        document.writeln("You have selected  Tea!!<br>")
+                        price=20;
+                        return price;
+                        break;
+                    }
+                case 7:
+                    {
+                        document.writeln("You have selected  Tea with Butter Cookies!!<br>")
+                        price=40;
+                        return price;
+                        break;
+                    }
+                case 8:
+                    {
+                        document.writeln("You have selected  Green Tea!!<br>")
+                        price=40;
+                        return price;
+                        break;
+                    }
+            }
+        }
+        function getbill(sel,pri,quan)
+        {
+            let bill=pri*quan;
+            document.writeln("Your Bill amount is=&nbsp&nbsp",bill);
+        }
+        getselection();
+        getquantity();
+        getprice(selection);
+        getbill(selection,price,quantity);
+
+    </script>
+</body>
+
+</html>

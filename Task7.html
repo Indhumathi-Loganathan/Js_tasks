@@ -1,0 +1,28 @@
+<html>
+<head>
+    <h1>
+        Factorial of a number
+    </h1>
+</head>
+<body>
+    <script>
+        let num=13;
+        let i=0;
+        result=factorial(num);
+
+        function factorial(a){
+            if(a>1)
+            {
+            i=a*factorial(a-1);
+            return i;
+            }
+            else if(a==1)
+            return 1;
+            else if(a<1)
+            return "Enter a positive whole number";
+            
+        }
+        document.writeln("The Factorial of Number","&nbsp &nbsp",num,"&nbspis:","&nbsp &nbsp",result);
+    </script>
+</body>
+</html>

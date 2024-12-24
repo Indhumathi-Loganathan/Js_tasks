@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <h1>
+            Marksheet
+        </h1>
+    </head>
+    <body>
+        <script>
+            let name="amar";
+            let id="s1";
+            let m1=40 , m2=96 , m3=85 , m4=78 , m5=64;
+            let percent;
+            let total;
+
+            total=m1+m2+m3+m4+m5;
+            percent=total/5;
+            document.write("Student ID: ",id,"<br>");
+            document.write("Student Name: ",name,"<br>");
+            document.write("C language :  ",m1,"<br>");
+            document.write("Html : ",m2,"<br>");
+            document.write("Javascript : ",m3,"<br>");
+            document.write("Python : ",m4,"<br>");
+            document.write("web developement : ",m5,"<br>");
+            document.write("The total marks=",percent,"%<br>");
+        
+            if(m1>=35&&m2>=35&&m3>=35&&m4>=35&&m5>=35)
+            {  
+                document.write("Pass<br>");
+                if(percent>=90&&percent<=100)
+                 {
+                    document.write("Grade A<br>");
+                }
+                else if(percent>=70&&percent<=89)
+                {
+                    document.write("Grade B<br>");
+                }
+                else if(percent>=50&&percent<=69)
+                {
+                    document.write("Grade C<br>");
+                }
+                else if(percent>=40&&percent<=49)
+                {
+                    document.write("Grade D<br>");
+                }
+                else{
+                    document.write("Below Average<br>");
+                }
+             }
+             else
+             {
+                document.write("Fail");
+             }
+
+        </script>
+    </body>
+</html>
